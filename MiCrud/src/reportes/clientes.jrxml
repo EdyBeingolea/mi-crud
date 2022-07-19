@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="clientes" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e6deec87-fac0-46e0-bc09-81612d8b06a3">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[Y2xpZW50ZXMuY2xpZW50ZXMgQVMgLDEyMCwzMCw5ZTEzNDM3ZC0yYjJjLTRmMzgtOWRiMC0wNTc0
+NmQ4MTZjYjI7]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Registro de Clientes"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT clientes.clientes.`IDCLI`,
+	clientes.clientes.`NOMCLI`,
+	clientes.clientes.`CELCLI`,
+	clientes.clientes.`GMLCLI`,
+	clientes.clientes.`PEDCLI`,
+	clientes.clientes.`MENCLI`
+FROM clientes.clientes]]>
+	</queryString>
+	<field name="IDCLI" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="IDCLI"/>
+		<property name="com.jaspersoft.studio.field.label" value="IDCLI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOMCLI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NOMCLI"/>
+		<property name="com.jaspersoft.studio.field.label" value="NOMCLI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CELCLI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CELCLI"/>
+		<property name="com.jaspersoft.studio.field.label" value="CELCLI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GMLCLI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GMLCLI"/>
+		<property name="com.jaspersoft.studio.field.label" value="GMLCLI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PEDCLI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PEDCLI"/>
+		<property name="com.jaspersoft.studio.field.label" value="PEDCLI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MENCLI" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MENCLI"/>
+		<property name="com.jaspersoft.studio.field.label" value="MENCLI"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="IDCLI">
+		<groupExpression><![CDATA[$F{IDCLI}]]></groupExpression>
+	</group>
+	<group name="NOMCLI">
+		<groupExpression><![CDATA[$F{NOMCLI}]]></groupExpression>
+	</group>
+	<group name="CELCLI">
+		<groupExpression><![CDATA[$F{CELCLI}]]></groupExpression>
+	</group>
+	<group name="GMLCLI">
+		<groupExpression><![CDATA[$F{GMLCLI}]]></groupExpression>
+	</group>
+	<group name="PEDCLI">
+		<groupExpression><![CDATA[$F{PEDCLI}]]></groupExpression>
+	</group>
+	<group name="MENCLI">
+		<groupExpression><![CDATA[$F{MENCLI}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="226" y="30" width="350" height="30" uuid="efdaed77-2486-4179-8468-19cd63a7250b"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REGISTROS DE CLIENTES]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="50" height="30" uuid="d143cef0-c96c-4c7f-bab6-70a933b4665a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="40341d85-e837-493d-97e6-cb0e6d7c013a"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="0" width="130" height="30" uuid="d3aa5d60-ef26-440d-89d2-c5f1478651d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3a99e91f-bc97-4cdf-9cbf-30fc42936f4b"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="100" height="30" uuid="9af5fc8f-e893-4ab3-b508-dfe4a6f6ea85">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="40bc520e-61e8-40c5-afed-d38139b86770"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CELULAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="160" height="30" uuid="269eea44-62c9-4d7b-87f4-a73f39313897">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e9f421f-7774-4bea-affd-daf0ad888516"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GMAIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="143" height="30" uuid="e08cbd1e-a612-4626-a47b-046642c183ac">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cdc1bc95-f684-4952-95fe-ccaf6c44ff37"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PEDIDO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="603" y="0" width="197" height="30" uuid="bcf01f6b-d140-4bed-9d84-16c462dc6bf3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e6d14067-8692-4a8a-8f1a-f29689ce461b"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MENSAJE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="50" height="30" uuid="15ee5d9b-f37b-4fb0-9ac3-5dcd1ae54c86">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="40341d85-e837-493d-97e6-cb0e6d7c013a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{IDCLI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="50" y="0" width="130" height="30" uuid="16ff4c8b-871a-4d4d-a074-395332a048cc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3a99e91f-bc97-4cdf-9cbf-30fc42936f4b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NOMCLI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="466c41dd-254e-4b96-8e3b-9af5698bbd1d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="40bc520e-61e8-40c5-afed-d38139b86770"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{CELCLI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="160" height="30" uuid="0317f3df-6482-4534-8b37-7ee4127b170a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e9f421f-7774-4bea-affd-daf0ad888516"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{GMLCLI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="143" height="30" uuid="82445d6d-2a51-4b7b-a1a6-d4fb430aa328">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cdc1bc95-f684-4952-95fe-ccaf6c44ff37"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PEDCLI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="603" y="0" width="197" height="30" uuid="3faa45a4-562e-4448-a5a3-98be23c623e4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e6d14067-8692-4a8a-8f1a-f29689ce461b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{MENCLI}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
